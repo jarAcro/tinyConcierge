@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Parisienne&family=Playball&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --primary-text-color: #E2BF60;
+
+}
+
+* {
+    font-family: "playfair display", "sans-serif";
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body,
+.container-fluid {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+/*-----------------------------------------Welcome Section-----------------------------------------------------------------------------------*/
+
+
+
+/*-------------------------------------Seating Section--------------------------------------------------------------*/
+
+#seating-section {
+    height: 100vh;
+    width: 100%;
+    background-image: url("../images/seatingmapFR.jpg");
+    background-size: 55%;
+    /* Adjust the width and height of the background image */
+    background-position: 45% 31%;
+    /* Adjust the position of the background image */
+    background-repeat: no-repeat;
+
+}
+
+#seating-section .back-button:hover {
+    background-color: rgb(92, 92, 249);
+    /* Change color to blue when hovered */
+    transform: scale(1.1);
+    /* Increase size when hovered */
+}
+
+#seating-section .button-circle {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: red;
+    border: none;
+    position: absolute;
+}
+
+#seating-section .bt {
+    height: 20px;
+    width: 20px;
+    opacity: .8;
+}
+
+/*--------------------------------Buttons 100 section---------------------------------------------------------------------------------*/
+#seating-section .button-101 {
+    top: 68%;
+    left: 43%;
+
+}
+
+#seating-section .button-102 {
+    top: 68.5%;
+    left: 51.5%;
+}
+
+#seating-section .button-103 {
+    top: 53%;
+    left: 37.7%;
+}
+
+#seating-section .button-104 {
+    top: 53%;
+    left: 57%;
+}
+
+#seating-section .button-105 {
+    top: 36%;
+    left: 38.7%;
+}
+
+#seating-section .button-106 {
+    top: 37%;
+    left: 55.6%;
+}
+
+/*-------------------------------Buttons 200 section------------------------------------------------------------*/
+#seating-section .button-200 {
+    top: 84%;
+    left: 47.4%;
+}
+
+#seating-section .button-201 {
+    top: 79.7%;
+    left: 36.5%;
+}
+
+#seating-section .button-202 {
+    top: 80%;
+    left: 58%;
+}
+
+#seating-section .button-203 {
+    top: 61%;
+    left: 29%;
+}
+
+#seating-section .button-204 {
+    top: 62%;
+    left: 66%;
+}
+
+#seating-section .button-205 {
+    top: 42.4%;
+    left: 29%;
+}
+
+#seating-section .button-206 {
+    top: 42%;
+    left: 66%;
+}
+
+/*---------------------------VIP Section-------------------------------------------------------------*/
+
+
+/*---------------------------------------VIP Slide out----------------------------------------------------------------------------------*/
+
+
+
+/*----------------------------------------------------------meet and greet slide out------------------------------------------------------------*/
+
+
+
+/*-------------------------------animations------------------------------------------------------------------*/
+@keyframes bounce {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-20px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.element {
+    animation: bounce 1s infinite;
+}
+
+@keyframes appear {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateX(100%);
+    }
+
+    to {
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideOut {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(100%);
+    }
+}
+
+@keyframes slideInleft {
+    from {
+        transform: translateX(-100%);
+    }
+
+    to {
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideOutleft {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: .8;
+    }
+}
